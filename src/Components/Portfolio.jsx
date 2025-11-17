@@ -49,10 +49,10 @@ const projectList = [
     url: "https://github.com/nelsooooon/BFDLFinal",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Your Next Project",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "This could be your next amazing project! Add your upcoming work, personal projects, or professional contributions here.",
+    url: "#",
   },
 ];
 
@@ -64,7 +64,12 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideInLeft",
+            }}
             alt={imageAltText}
           />
         </div>

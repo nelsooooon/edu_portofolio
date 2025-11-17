@@ -23,20 +23,19 @@ const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
  */
-const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+const description = 
+  "Machine Learning Cohort @ Asah led by Dicoding | Deep Learning Expertise | AI Enthusiast | Passionate about leveraging technology to solve real-world problems.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Deep Learning",
+  "Machine Learning",
+  "Computer Vision",
+  "Natural Language Processing",
+  "Python Programming",
 ];
 
 /**
@@ -45,7 +44,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "Undergraduate student of Informatics from University of Surabaya (UBAYA), currently enrolled in a Machine Learning cohort with Asah led by Dicoding (2025), with a strong passion for programming, data analysis, and technology innovation. Developed competencies in Deep Learning, Computer Visions, and Natural Language Processing (NLP) supported by certifications in Python programming, Machine Learning fundamentals, and Deep Learning fundamentals.";
 
 const About = () => {
   return (

@@ -31,22 +31,22 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "BMLP Final Project - Clustering & Classification",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "End-to-end machine learning notebooks for unsupervised clustering and supervised classification. The project includes data loading, preprocessing, PCA + KMeans clustering, Decision Tree and Random Forest classifiers, evaluation metrics/plots, hyperparameter tuning, and persisted artifacts.",
+    url: "https://github.com/nelsooooon/BMLPFinal",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Sentiment Analysis for Google Classroom Reviews",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "A lightweight, notebook-driven pipeline to scrape Google Play Store reviews for Google Classroom, preprocess English text, and run sentiment inference using two models: Logistic Regression (with TF‑IDF features) and a Dense Neural Network (DNN). The repo includes ready-to-run notebooks for scraping and inference, plus pretrained artifacts in the project root.",
+    url: "https://github.com/nelsooooon/BFDLFirst",
   },
   {
-    title: "My Resume Site",
+    title: "BFDLFinal - Multi-Format TensorFlow Image Classifier",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "This project provides a trained image classification model exported to three deployment targets: native TensorFlow SavedModel, TensorFlow Lite (for mobile/edge), and TensorFlow.js (for browser inference). It predicts one of the classes defined in tflite/label.txt (e.g. glacier, sea, street).",
+    url: "https://github.com/nelsooooon/BFDLFinal",
   },
   {
     title: "GitHub Codespaces and github.dev",

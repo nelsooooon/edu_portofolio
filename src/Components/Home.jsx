@@ -27,7 +27,14 @@ const imageAltText = "Adult female in office setting leaning against a glass wal
 const Home = ({ name, title }) => {
   return (
     <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
+      <img 
+        className="background" 
+        src={image} 
+        alt="" 
+        style={{
+          animation: "fadeIn 1.5s ease-out"
+        }}
+      />
       <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
         <h1>{name}</h1>
         <h2>{title}</h2>

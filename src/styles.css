@@ -2,11 +2,11 @@
 * CSS file to hold styles that apply across the application
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -40,7 +40,8 @@ section.padding {
 section img.background {
   height: 100%;
   left: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -137,6 +138,28 @@ img.socialIcon {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+/* add a slide In Right animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* add a fade in animation for home background */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

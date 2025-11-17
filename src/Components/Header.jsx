@@ -7,6 +7,14 @@
 import React from "react";
 
 const Header = () => {
+  const handleClick = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div
       style={{
@@ -21,11 +29,11 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#education">Education</a>
-      <a href="#footer">Contact</a>
+      <a href="#home" onClick={(e) => handleClick(e, 'home')}>Home</a>
+      <a href="#about" onClick={(e) => handleClick(e, 'about')}>About</a>
+      <a href="#portfolio" onClick={(e) => handleClick(e, 'portfolio')}>Portfolio</a>
+      <a href="#education" onClick={(e) => handleClick(e, 'education')}>Education</a>
+      <a href="#footer" onClick={(e) => handleClick(e, 'footer')}>Contact</a>
     </div>
   );
 };

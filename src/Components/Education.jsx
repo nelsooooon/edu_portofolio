@@ -4,7 +4,7 @@
  * Displays your educational background and certifications.
  */
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import image from "../images/education-background.jpg";
 
@@ -48,6 +48,30 @@ const educationList = [
 ];
 
 const Education = () => {
+  const imageRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section className="padding" id="education">
       <h2 style={{ textAlign: "center" }}>Education</h2>
@@ -68,14 +92,15 @@ const Education = () => {
             </div>
           ))}
         </div>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        <div ref={imageRef} style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
             style={{
               height: "90%",
               width: "100%",
               objectFit: "cover",
-              animation: "1s ease-out 0s 1 slideInRight",
+              opacity: isVisible ? 1 : 0,
+              animation: isVisible ? "slideInRight 1s ease-out" : "none",
             }}
             alt={imageAltText}
           />
